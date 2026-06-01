@@ -48,7 +48,6 @@ The screenshot set demonstrates three concurrent design languages — the visibl
 **Modern Fluid theme** — gradient hero ("Join The Movement"), "What's Included / $99" subscription page with a slide-in checkout drawer, modern Contact Us.
 
 ![Fluid landing hero — "Join The Movement"](images/3.png)
-![Fluid "What's Included" subscription page with checkout drawer](images/4.png)
 ![Fluid subscription / checkout drawer](images/5.png)
 ![Fluid modern Contact Us](images/6.1.png)
 
