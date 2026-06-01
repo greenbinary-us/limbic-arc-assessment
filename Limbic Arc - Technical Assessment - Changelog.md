@@ -1,0 +1,7 @@
+# Limbic Arc — Technical Assessment · Changelog
+
+Version history for *Limbic Arc — Integration & Platform Technical Assessment*.
+
+- **v0.3** — Restructured for a cleaner deliverable: removed the document header (status / prepared-by / source material), confidence ratings, and inline verification tags (moved to the Verification Items companion). Reframed "the problem" language as "missing component / gap"; reframed the in-house-team finding as "no technical representation on Limbic Arc's side (works through vendors)". Renamed "Headline recommendation" → "Recommendation" and "Root-Cause Analysis" → "Underlying Causes"; renamed the "Key reframing" callout to "Guiding principle". Renumbered roadmap phases (former Phase 0 → Phase 1, etc.). Added the 12-Factor App Scorecard. Removed the Data/Analytics row from the system inventory and removed two security bullets (PCI-scope, merchant-account verification). Moved Data & Analytics, Open Questions, and Sources into the Appendix companion. Moved this changelog out of the main document.
+- **v0.2** — Incorporated client answers to open questions: removed double-charge framing (tokenization fragmentation retained as the core payment risk); fixed Profile source-of-truth to Exigo; added "Limbic Arc sites should hold no card data / be out of PCI scope" as a target principle; corrected the replicated-site characterization (low functionality, used by all users); added the in-house-team constraint; expanded the roadmap.
+- **v0.1** — Initial draft.

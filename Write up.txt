@@ -1,0 +1,93 @@
+Liminal arc assessment
+
+Exigo has a robust MLM engine and works well for MLM needs while fluid works well as a ecommerce engine for MLM
+
+Distributor Backoffice is .net source code built using boiler plate exigo source code. The issue there is a lot of tight coupling. There is no separation between front end and backend. Because there is not much documentation on it, there is a heavy reliance on exigo's knowledge on this which creates heavy dependancy on exigo for customizations. There is not a lot of support on this which can cause a lot of libraries etc to go out of support. 
+
+The exigo boilerplate is designed to work with its own replicated site and ecommerce flows. While this is currently in very low usage, the base architecture does not support or make it easy to work with other ecommerce systems making it a bottleneck. Some of the bottlenecks observed are around profile management, subscription management, payment tokenization
+
+
+ 
+ 
+The systems observed
+Landing site - Luminalarc.com where customers can view/subscribe the available subscriptions
+
+Customer admin - This is the admin site where customers can view their accounts. This includes the family and friends plan, subscription management and tokenization. While we want all the tokenization to happen on fluid going forward, the system is currently not setup that way. Users are able to login to their account and update their credit card information which tokenizes the card in Exigo and not in fluid. There is a dichotomy that exists here which will continue for a long time with card tokenization happening in both exigo and fluid
+
+Distributor admin - This is the site th
+MLM engine
+Data
+
+
+Backoffice:
+Heavily usage of exigo's boiler plate code. Tightly coupled architecture making it very difficult to integrate anything new. Outdated UI + expensive to make modifications and response timeline varies based on exigo priority
+
+Webapp:
+While this is not in scope of the assessment, the one touch point is that the users will have to login multiple times. For example, once the user is logged in as a customer or as an affiliate, they should not have to login again to get to the web application
+
+Subscriptions
+Some subscriptions in exigo and some subscriptions in fluid. This causes tokenization conflicts. Future state for subscriptions will be in the fluid. some issues have happened with double charging because of token mismatching
+
+
+Data
+Exigo is a great MLM engine. We are retro fitting that engine with additional features which it is not originally built for. The boilerplat code originally provided is to facilitate the initial use of exigo and not really meant for long term usage. At some point customers will need to own the look and feel. Tomorrow if customer decides to move out of exigo into a different system, the boilerplat code will not be useable. Even with the current boiler plate code, it take a lot of time to push new features out to customers or pinpoint issues and resolve them. We are in firefighting mode that is taking time and energry away from giving energy away from serving customers or adopting AI driven development
+
+What are we doing with analytics
+Google analytics and powerBI is currently in use for data but a lot more can be done around it
+
+What metrics are used to determine the health of the business
+
+
+Profile management is not centralized. A user could have subscriptions in exigo and in fluid
+
+Administrative tooling can be improved.
+
+Role based access control should be present on the sites and currently there is none
+
+
+
+
+
+Subscriptions is the main problem area
+
+
+Recommendations
+Extricate profile into a separate application with APIs
+Extricate payments into a separate application with APIs
+Extricate subscriptions into a separate application with APIs
+Extricate family and friends into a separate application with APIs
+Extricate signup and upgrade flows to a separate application
+
+
+
+Add a table for source of truth data
+Subject				| Desired state for Source of truth | Current state 
+Profile				| Exigo								| Mixed
+Payin (tokenization)| Fluid								| Mixed
+Commission payouts	| Exigo								| Exigo
+Family and Friends	| Separate							| Exigo	Extended (Retrofit)
+Subscriptions		| Fluid								| Mixed
+
+
+Hosting
+Have a separate cloud subscription for limbic arc
+
+Observability
+Datadog
+
+CICD
+Development practice needs to be setup
+
+AI
+We are currently playing "defense" when we should be thinking about what features/enhancements can be offered to customers with ease and speed. This can easily be used by leveraging AI
+
+
+What if
+	Simple use case: Add a common banner to a specific group of users on the top of all logged in pages
+	Simple use case: change the contact us page to match the modern formatting provided by fluid
+	Harder use case: Change the UX to match the modern UX
+	Even harder use case: Provide the ability for the User to change the theme, move the widgets on the screen and save their preferences
+	Even harder use case: Give a 5% discount to family and friends on their birthdays
+	
+	
+	
