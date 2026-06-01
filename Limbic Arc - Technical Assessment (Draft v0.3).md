@@ -86,6 +86,8 @@ A 12-Factor assessment of the Exigo .NET boilerplate codebase highlights where i
 | XI. Logs | Unknown | No structured logging library observed |
 | XII. Admin Processes | Unknown | `ScheduledTaskService` exists but in-process |
 
+**Salvageable assets:** the boilerplate is not all liability. Some of the Fluid integrations already implemented in the back office — the working API calls, authentication/handshake, and data-mapping logic between Exigo and Fluid — can be reused. Rather than rewriting these from scratch, the extraction work (§8) should lift this integration logic out of the coupled boilerplate, wrap it behind a clean anti-corruption layer, and carry it forward into the new services. This reduces the cost and risk of Phase 3 (Payments & Subscriptions) and preserves hard-won knowledge about how the two platforms actually exchange data.
+
 ---
 
 ## 5. Underlying Causes (the "why", not just the "what")
