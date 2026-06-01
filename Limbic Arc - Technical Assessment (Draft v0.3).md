@@ -43,11 +43,25 @@ The system today exhibits five compounding issues:
 
 ### 3.1 Visual / UX evidence (from screenshots)
 
-The screenshot set demonstrates three concurrent design languages — the visible surface of the deeper architectural split:
+The screenshot set demonstrates three concurrent design languages — the visible surface of the deeper architectural split.
 
-- **Modern Fluid theme** — gradient hero ("Join The Movement"), "What's Included / $99" subscription page with a slide-in checkout drawer, modern Contact Us. *(images 3, 4/5, 6.1)*
-- **Exigo Customer Admin, white header** — "Account Information", "Pet InfoBoost Program" upsell with inline pricing/charge logic. *(images 1, 5.1)*
-- **Exigo Affiliate/Distributor, green header** — "Affiliate Information / Your Enroller", the distributor dashboard with "Title Advancement", compensation plan, news widgets, and an older green "Contact us" page. *(images 2, 6, 7)*
+**Modern Fluid theme** — gradient hero ("Join The Movement"), "What's Included / $99" subscription page with a slide-in checkout drawer, modern Contact Us.
+
+![Fluid landing hero — "Join The Movement"](images/3.png)
+![Fluid "What's Included" subscription page with checkout drawer](images/4.png)
+![Fluid subscription / checkout drawer](images/5.png)
+![Fluid modern Contact Us](images/6.1.png)
+
+**Exigo Customer Admin, white header** — "Account Information", "Pet InfoBoost Program" upsell with inline pricing/charge logic.
+
+![Exigo customer admin — Account Information (white header)](images/1.png)
+![Exigo customer admin — Pet InfoBoost Program upsell](images/5.1.png)
+
+**Exigo Affiliate/Distributor, green header** — "Affiliate Information / Your Enroller", the distributor dashboard with "Title Advancement", compensation plan, news widgets, and an older green "Contact us" page.
+
+![Exigo affiliate — Affiliate Information / Your Enroller (green header)](images/2.png)
+![Exigo distributor — older green Contact Us](images/6.png)
+![Exigo distributor dashboard — Title Advancement & compensation plan](images/7.png)
 
 A user moving from "subscribe" (Fluid) → "manage my account" (Exigo customer) → "affiliate opportunity / back office" (Exigo distributor) crosses three different-looking applications, and logs in more than once along the way.
 
