@@ -191,7 +191,7 @@ Sequenced by value × urgency:
 ## 9. Security & Compliance Findings
 
 - **No RBAC = authorization gap.** Without roles, any authenticated user may reach functions they shouldn't; support/admin actions aren't separated. High priority.
-- **Single-sign-on absence** is both UX and security debt (more credential surfaces, inconsistent session/MFA policy).
+- **Single-sign-on absence** is both UX and security tech debt (more credential surfaces, inconsistent session/MFA policy).
 - **Audit trail.** With multiple writers to profile/subscription/payment, there is likely no unified audit log of "who changed what, where." Needed for dispute/billing investigations.
 - **Vendor lock-in / exit risk.** Boilerplate code is non-portable if Limbic Arc ever leaves Exigo. The extracted-services architecture is the mitigation — it makes the engine replaceable behind a stable contract.
 
@@ -211,7 +211,7 @@ The write-up's framing — playing defense when we should be on offense — is c
 
 > Sequenced to put delivery capability in place first, consolidate payments/identity second, modernize experience third, then go on offense. Phase 1 gates everything after it. Durations are placeholders to size with the delivery group.
 
-### Phase 1 — Establish delivery capability & stop new debt *(foundational; gating)*
+### Phase 1 — Establish delivery capability & stop new tech debt *(foundational; gating)*
 - **Goal:** Have technical representation that can own the code, and stop the issues that are cheap to stop.
 - **Why now:** Every later phase assumes a delivery group exists to execute it.
 - **Workstreams:**
@@ -276,4 +276,3 @@ The write-up's framing — playing defense when we should be on offense — is c
 
 ---
 
-*Companion documents: Changelog; Verification Items; Appendix (Data & Analytics, Open Questions, Sources).*

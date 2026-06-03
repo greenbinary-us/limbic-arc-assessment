@@ -1,0 +1,75 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="style.css">
+<style>
+.track{display:flex;align-items:stretch;gap:0;margin-top:8px}
+.step{flex:1;background:#fff;border:1.5px solid var(--line);border-radius:14px;padding:0 0 14px;overflow:hidden;display:flex;flex-direction:column;position:relative}
+.step .cap{height:8px}
+.step .num{width:42px;height:42px;border-radius:50%;color:#fff;font-size:20px;font-weight:800;display:flex;align-items:center;justify-content:center;margin:14px auto 8px}
+.step .st{font-size:17px;font-weight:800;color:var(--ink);text-align:center;padding:0 12px;line-height:1.15;min-height:42px}
+.step .bn{font-size:14px;color:var(--slate);text-align:center;padding:8px 13px 0;line-height:1.3}
+.step .badge{position:absolute;top:14px;left:50%;transform:translateX(-50%);font-size:12px;font-weight:800;color:#fff;padding:3px 9px;border-radius:6px;letter-spacing:.3px;white-space:nowrap}
+.chev{flex:0 0 26px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:26px;font-weight:300}
+.phaserow{display:flex;align-items:center}
+.legend{display:flex;justify-content:space-between;font-size:14px;font-weight:700;color:var(--muted);margin:6px 6px 0;letter-spacing:.3px}
+</style></head>
+<body>
+<div class="stage">
+  <div class="htitle">The recommended path &mdash; gradual, safe, reversible</div>
+  <div class="hsub">No risky &ldquo;big rewrite.&rdquo; Modernize one area at a time &mdash; each step stands on its own and leaves you better off</div>
+  <div class="body">
+
+    <div class="phaserow">
+      <div class="step">
+        <div class="cap" style="background:#25496B"></div>
+        <div class="num" style="background:#25496B;margin-top:30px">1</div>
+        <div class="badge" style="background:var(--risk)">START HERE</div>
+        <div class="st">Get a team in place &amp; stop new tech debt</div>
+        <div class="bn">Someone who can actually make changes; early protection on billing &amp; compliance</div>
+      </div>
+      <div class="chev">&#8250;</div>
+      <div class="step">
+        <div class="cap" style="background:#2C6E7E"></div>
+        <div class="num" style="background:#2C6E7E">2</div>
+        <div class="st">Foundations</div>
+        <div class="bn">Your own secure cloud, single sign-on, access control, safe releases</div>
+      </div>
+      <div class="chev">&#8250;</div>
+      <div class="step">
+        <div class="cap" style="background:#1AA192"></div>
+        <div class="num" style="background:#1AA192;margin-top:30px">3</div>
+        <div class="badge" style="background:#C98A2E">&#9733; #1 FIX</div>
+        <div class="st">Payments &amp; subscriptions</div>
+        <div class="bn">One home for cards, reliable subscriptions, smaller compliance burden</div>
+      </div>
+      <div class="chev">&#8250;</div>
+      <div class="step">
+        <div class="cap" style="background:#2E9B7C"></div>
+        <div class="num" style="background:#2E9B7C">4</div>
+        <div class="st">Profile &amp; Family / Friends</div>
+        <div class="bn">Clean, flexible customer data &mdash; unlocks perks, segments, personalization</div>
+      </div>
+      <div class="chev">&#8250;</div>
+      <div class="step">
+        <div class="cap" style="background:#4E9E55"></div>
+        <div class="num" style="background:#4E9E55">5</div>
+        <div class="st">Unified sign-up &amp; modern look</div>
+        <div class="bn">One consistent experience, one login, across the whole journey</div>
+      </div>
+      <div class="chev">&#8250;</div>
+      <div class="step">
+        <div class="cap" style="background:#7BA23C"></div>
+        <div class="num" style="background:#7BA23C">6</div>
+        <div class="st">Insights &amp; AI</div>
+        <div class="bn">Decisions driven by data; first customer-facing AI features</div>
+      </div>
+    </div>
+
+    <div class="legend"><span>&#9664;&nbsp; REDUCE RISK &amp; COST FIRST</span><span>GROW &amp; GO ON OFFENSE&nbsp; &#9654;</span></div>
+
+    <div class="note good" style="margin-top:20px">
+      <span class="tag">SAFETY</span>
+      <div>There&rsquo;s an <b>exit ramp at every phase.</b> Steps 1&ndash;2 come first and unlock the rest; later steps can overlap. Nothing is &ldquo;all or nothing.&rdquo;</div>
+    </div>
+
+  </div>
+</div>
+</body></html>

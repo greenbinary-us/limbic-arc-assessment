@@ -1,0 +1,56 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="style.css">
+<style>
+.cols{display:flex;gap:20px;align-items:stretch}
+.col{flex:1;border-radius:16px;overflow:hidden;border:1.5px solid var(--line);background:#fff;display:flex;flex-direction:column}
+.col .ch{padding:16px 18px;color:#fff;font-weight:800;font-size:24px}
+.col .ch .sub{display:block;font-size:14px;font-weight:600;opacity:.9;margin-top:2px;letter-spacing:.3px}
+.col.e .ch{background:linear-gradient(100deg,#2E7D5B,#3fa377)}
+.col.f .ch{background:linear-gradient(100deg,#6C5CE7,#9b7bff)}
+.col.n .ch{background:linear-gradient(100deg,#1F3A5F,#2C527E)}
+.col ul{list-style:none;padding:14px 18px;margin:0;flex:1}
+.col li{font-size:19px;color:var(--ink);padding:11px 0;border-bottom:1px solid var(--panel);display:flex;align-items:flex-start;gap:10px;line-height:1.25}
+.col li:last-child{border-bottom:none}
+.col li .b{flex:none;width:9px;height:9px;border-radius:50%;margin-top:8px}
+.col.e li .b{background:var(--exigo)} .col.f li .b{background:var(--fluid)} .col.n li .b{background:var(--navy)}
+.col li small{display:block;color:var(--slate);font-size:14px;font-weight:500;margin-top:2px}
+</style></head>
+<body>
+<div class="stage">
+  <div class="htitle">Who owns what &mdash; one source of truth</div>
+  <div class="hsub">One system is in charge of each thing. Everyone else just gets a copy.</div>
+  <div class="body">
+
+    <div class="cols">
+      <div class="col e">
+        <div class="ch">Exigo<span class="sub">THE ENGINE &mdash; KEEP IT</span></div>
+        <ul>
+          <li><span class="b"></span><div>Distributor network &amp; genealogy</div></li>
+          <li><span class="b"></span><div>Ranks &amp; title advancement</div></li>
+          <li><span class="b"></span><div>Commissions &amp; payouts</div></li>
+          <li><span class="b"></span><div>Profile / identity <small>the master record for &ldquo;who is this person&rdquo;</small></div></li>
+        </ul>
+      </div>
+      <div class="col f">
+        <div class="ch">Fluid<span class="sub">THE STOREFRONT &mdash; KEEP IT</span></div>
+        <ul>
+          <li><span class="b"></span><div>Payment cards <small>one secure vault, the only &ldquo;card on file&rdquo;</small></div></li>
+          <li><span class="b"></span><div>Subscriptions &amp; recurring billing</div></li>
+          <li><span class="b"></span><div>Online store &amp; checkout</div></li>
+        </ul>
+      </div>
+      <div class="col n">
+        <div class="ch">New owned service<span class="sub">BUILD IT CLEAN</span></div>
+        <ul>
+          <li><span class="b"></span><div>Family &amp; Friends <small>relationships &amp; perks &mdash; e.g. a birthday discount, free Pet InfoBoost</small></div></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="note good" style="margin-top:22px">
+      <span class="tag">THE RULE</span>
+      <div>Exactly one system is allowed to change each thing &mdash; no website writes to a system that doesn&rsquo;t own that data. This single rule prevents the entire class of &ldquo;split data&rdquo; problems.</div>
+    </div>
+
+  </div>
+</div>
+</body></html>

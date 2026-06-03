@@ -173,7 +173,7 @@ Sequenced by **value × urgency**:
 - **No RBAC = authorization gap.** Without roles, any authenticated user may reach functions they shouldn't; support/admin actions aren't separated. **HIGH priority.**
 - **PCI scope should shrink to (near) zero on Limbic Arc surfaces.** *(Client intent — [VERIFY].)* Today, tokenizing in Exigo *and* Fluid puts **two** environments in scope. The target — **Limbic Arc sites collect no card data**, all capture via Fluid-hosted fields/redirect — removes Limbic Arc properties from PCI scope (potentially **SAQ-A**) and consolidates the vault to Fluid. Compliance *and* risk win.
 - **[VERIFY]** Merchant account(s) and current PCI SAQ level across Exigo and Fluid — *yet to be confirmed.*
-- **Single-sign-on absence** is both UX and security debt (more credential surfaces, inconsistent session/MFA policy).
+- **Single-sign-on absence** is both UX and security tech debt (more credential surfaces, inconsistent session/MFA policy).
 - **Audit trail.** With multiple writers to profile/subscription/payment, there is likely no unified audit log of "who changed what, where." Needed for dispute/billing investigations. **[VERIFY].**
 - **Vendor lock-in / exit risk.** Boilerplate code is non-portable if Limbic Arc ever leaves Exigo. The extracted-services architecture *is* the mitigation — it makes the engine replaceable behind a stable contract. (Compounded today by having no in-house team — see §10/§13.)
 
@@ -221,7 +221,7 @@ The write-up's framing — *playing defense when we should be on offense* — is
 
 > Sequenced to **establish capability first, consolidate payments/identity second, modernize experience third, then go on offense.** Because there is **no in-house team**, Phase 0 is non-negotiable and gates everything after it. Durations are placeholders **[SIZE with the team/partner]**.
 
-### Phase 0 — Establish delivery capability & stop new debt *(foundational; gating)*
+### Phase 0 — Establish delivery capability & stop new tech debt *(foundational; gating)*
 - **Goal:** Have *someone who can own the code*, and stop the bleeding that's cheap to stop.
 - **Why now:** With no in-house team (§4-E), nothing else is executable. Every later phase assumes a delivery group exists.
 - **Workstreams:**

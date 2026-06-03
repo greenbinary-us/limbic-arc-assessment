@@ -1,0 +1,40 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="style.css"></head>
+<body>
+<div class="stage">
+  <div class="htitle">The #1 risk: one card, stored in two places</div>
+  <div class="hsub">When a customer saves a card, it gets &ldquo;tokenized&rdquo; (turned into a secure reference). Today that happens twice.</div>
+  <div class="body">
+
+    <div class="center" style="margin-bottom:24px">
+      <div class="box cust"><div class="t">One customer &middot; one card</div><div class="s">Saves their card to pay for a subscription</div></div>
+    </div>
+
+    <div class="row" style="align-items:center;gap:18px">
+      <div class="box exigo" style="flex:1">
+        <div class="t">Exigo</div>
+        <div class="s">stores a token for the card</div>
+      </div>
+      <div class="bigar green">&#8598;</div>
+      <div class="center" style="flex-direction:column;gap:10px">
+        <div class="qmark">?</div>
+        <div style="font-size:17px;font-weight:700;color:var(--risk);text-align:center;max-width:200px">No single system owns &ldquo;the card on file&rdquo;</div>
+      </div>
+      <div class="bigar purple">&#8599;</div>
+      <div class="box fluid" style="flex:1">
+        <div class="t">Fluid</div>
+        <div class="s">stores a <i>different</i> token for the same card</div>
+      </div>
+    </div>
+
+    <div style="text-align:center;font-size:16px;color:var(--muted);margin:20px 0 12px">
+      The two tokens are not interchangeable &mdash; so &ldquo;the card is on file in both&rdquo; does <b style="color:var(--ink)">not</b> mean billing is consistent
+    </div>
+
+    <div class="conseq">
+      <div class="c">Fragile, hard-to-predict subscriptions</div>
+      <div class="c">Billing inconsistencies &amp; support escalations</div>
+    </div>
+
+  </div>
+</div>
+</body></html>

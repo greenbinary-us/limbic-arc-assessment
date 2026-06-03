@@ -163,7 +163,7 @@ These were under-emphasized in the write-up and matter for an MLM/payments busin
 
 - **No RBAC = authorization gap.** Without roles, any authenticated user may reach functions they shouldn't; support/admin actions aren't separated. **HIGH priority.** *(Confidence: HIGH — stated absence.)*
 - **PCI scope is currently larger than it should be.** Tokenizing in Exigo *and* Fluid means **two** environments are in PCI scope. Consolidating tokenization to Fluid (hosted fields/redirect) shrinks Limbic Arc's PCI footprint and is a compliance *and* risk win. **[VERIFY]** current PCI SAQ level and who holds the merchant account(s). *(Confidence: MEDIUM-HIGH.)*
-- **Single-sign-on absence** is both UX and security debt (more credential surfaces, inconsistent session/MFA policy).
+- **Single-sign-on absence** is both UX and security tech debt (more credential surfaces, inconsistent session/MFA policy).
 - **Audit trail.** With multiple writers to profile/subscription/payment, there is likely no unified audit log of "who changed what, where." Needed for dispute/double-charge investigations. **[VERIFY].**
 - **Vendor lock-in / exit risk.** The write-up's point is well taken: boilerplate code is non-portable if Limbic Arc ever leaves Exigo. The extracted-services architecture *is* the mitigation — it makes the engine replaceable behind a stable contract.
 
